@@ -91,4 +91,4 @@ class Stack<T>{
     }
 }
 
-export {Stack, Node}
+export {Stack, Node as NodeStack}

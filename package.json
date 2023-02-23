@@ -2,17 +2,23 @@
   "name": "algo-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "npx tsc",
-    "dev": "npx tsc runner.ts && node runner.js"
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
+    "dev": "npx tsc runner.ts && node runner.js",
+    "lint": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@jest/globals": "^29.4.3",
     "ts-jest": "^29.0.5",
+    "tsup": "^6.6.3",
     "typescript": "^4.9.5"
   }
 }
