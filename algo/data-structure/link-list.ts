@@ -32,7 +32,6 @@ class LinkList<T>{
             this.tail = node
         }
         this.length++;
-
     }
     iteration(func:(curreent: Node<T>, index:number)=> void) {
         let current = this.head
