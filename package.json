@@ -10,7 +10,8 @@
     "build": "tsup index.ts --format cjs,esm --dts",
     "prepublishOnly": "npm run build",
     "dev": "npx tsc runner.ts && node runner.js",
-    "lint": "tsc"
+    "lint": "tsc",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
   "author": "",
   "license": "MIT",
