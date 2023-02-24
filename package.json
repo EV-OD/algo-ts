@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup index.ts --format cjs,esm",
     "prepublishOnly": "npm run build",
     "dev": "npx tsc runner.ts && node runner.js",
     "lint": "tsc",
