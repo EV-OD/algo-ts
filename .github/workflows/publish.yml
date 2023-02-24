@@ -19,9 +19,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          registry-url: https://registry.npmjs.org/
           cache: "pnpm"
       
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - name: Create Release pull Request or Publish
         id: changesets
         uses: changesets/action@v1
