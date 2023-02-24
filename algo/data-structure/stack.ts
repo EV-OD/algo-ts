@@ -2,6 +2,7 @@ import log from "../../index";
 
 function line(){
     log("=========================")
+    log("=========================")
 }
 
 class Node<T>{
