@@ -1,5 +1,11 @@
 # @allwcons/algo-ts
 
+## 0.1.0
+
+### Minor Changes
+
+- c2dc1d7: added double line in line function
+
 ## 0.0.3
 
 ### Patch Changes
