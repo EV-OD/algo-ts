@@ -1,5 +1,11 @@
 # @allwcons/algo-ts
 
+## 0.2.0
+
+### Minor Changes
+
+- add new data structure "queue"
+
 ## 0.1.0
 
 ### Minor Changes

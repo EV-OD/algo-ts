@@ -1,21 +1,11 @@
-import log from "./index"
+import log from "./index";
 
-import { Stack , NodeStack} from "./algo/data-structure/stack";
+import { NodeQueue, Queue } from "./algo/data-structure/queue";
 
+let queue;
 
-const stack = new Stack<number>(new NodeStack<number>(1));
-stack.push(new NodeStack<number>(2));
-stack.push(new NodeStack<number>(3));
-stack.push(new NodeStack<number>(4));
-stack.push(new NodeStack<number>(5));
-
-// Rotate the stack to the left by 3 elements
-stack.leftRotate(3);
-
-log(stack.pop()?.value)
-log(stack.pop()?.value)
-log(stack.pop()?.value)
-log(stack.pop()?.value)
-log(stack.pop()?.value)
-
-
+queue = new Queue(new NodeQueue(1));
+queue.enqueue(new NodeQueue(2));
+queue.enqueue(new NodeQueue(3));
+const item = queue.dequeue();
+log(item);

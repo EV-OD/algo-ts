@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var index_1 = require("./index");
+var queue_1 = require("./algo/data-structure/queue");
+var queue;
+queue = new queue_1.Queue(new queue_1.NodeQueue(1));
+queue.enqueue(new queue_1.NodeQueue(2));
+queue.enqueue(new queue_1.NodeQueue(3));
+var item = queue.dequeue();
+(0, index_1["default"])(item);
