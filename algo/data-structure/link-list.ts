@@ -1,5 +1,6 @@
 import log from "../..";
 
+
 class Node<T> {
   value: T;
   next: Node<T> | null;
