@@ -1,5 +1,12 @@
 # @allwcons/algo-ts
 
+## 0.2.2
+
+### Patch Changes
+
+- 76c429c: delete depreceated feature
+- 76c429c: fix depreciatation
+
 ## 0.2.0
 
 ### Minor Changes
