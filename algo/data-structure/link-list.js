@@ -87,7 +87,6 @@ var LinkList = /** @class */ (function () {
     LinkList.prototype.len = function () {
         var index = 0;
         this.iteration(function (_c, i) {
-            (0, __1["default"])("d" + i);
             index++;
         });
         return index;

@@ -27,9 +27,6 @@ var Queue = /** @class */ (function () {
     Queue.prototype.dequeue = function () {
         if (!this.isEmpty()) {
             var item = this.items[this.frontIndex];
-            console.log("🚀 ~ file: queue.ts:35 ~ Queue<T> ~ dequeue ~ this.items:", this.items);
-            console.log("🚀 ~ file: queue.ts:35 ~ Queue<T> ~ dequeue ~ frontIndex:", this.frontIndex);
-            console.log("🚀 ~ file: queue.ts:35 ~ Queue<T> ~ dequeue ~ item:", item);
             delete this.items[this.frontIndex];
             this.frontIndex++;
             this.length--;
